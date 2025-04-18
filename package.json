@@ -1,6 +1,6 @@
 {
   "name": "@smvgdev/vite-plugin-shopify-assets-sweep",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Sweeps away stale Vite build artifacts from the Shopify assets folder, preserving static files via a manifest.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
