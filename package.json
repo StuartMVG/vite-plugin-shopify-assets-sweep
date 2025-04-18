@@ -1,5 +1,5 @@
 {
-  "name": "vite-plugin-shopify-assets-sweep",
+  "name": "@smvgdev/vite-plugin-shopify-assets-sweep",
   "version": "1.0.0",
   "description": "Sweeps away stale Vite build artifacts from the Shopify assets folder, preserving static files via a manifest.",
   "main": "dist/index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/StuartMVG/vite-plugin-shopify-assets-sweep.git"
+    "url": "git+https://github.com/StuartMVG/vite-plugin-shopify-assets-sweep.git"
   },
   "scripts": {
     "build": "tsc",
@@ -37,5 +37,20 @@
   },
   "peerDependencies": {
     "vite": "^4.0.0"
-  }
+  },
+  "dependencies": {
+    "esbuild": "^0.18.20",
+    "fsevents": "^2.3.3",
+    "nanoid": "^3.3.11",
+    "picocolors": "^1.1.1",
+    "postcss": "^8.5.3",
+    "rollup": "^3.29.5",
+    "source-map-js": "^1.2.1",
+    "undici-types": "^6.21.0",
+    "vite": "^4.5.13"
+  },
+  "bugs": {
+    "url": "https://github.com/StuartMVG/vite-plugin-shopify-assets-sweep/issues"
+  },
+  "homepage": "https://github.com/StuartMVG/vite-plugin-shopify-assets-sweep#readme"
 }
