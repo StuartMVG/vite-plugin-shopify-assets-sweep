@@ -38,17 +38,7 @@
   "peerDependencies": {
     "vite": "^4.0.0"
   },
-  "dependencies": {
-    "esbuild": "^0.18.20",
-    "fsevents": "^2.3.3",
-    "nanoid": "^3.3.11",
-    "picocolors": "^1.1.1",
-    "postcss": "^8.5.3",
-    "rollup": "^3.29.5",
-    "source-map-js": "^1.2.1",
-    "undici-types": "^6.21.0",
-    "vite": "^4.5.13"
-  },
+  "dependencies": {},
   "bugs": {
     "url": "https://github.com/StuartMVG/vite-plugin-shopify-assets-sweep/issues"
   },
