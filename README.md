@@ -1,6 +1,6 @@
 # 🧹 vite-plugin-shopify-assets-sweep
 
-A Vite plugin that **cleans up stale assets** from your Shopify theme's `assets/` folder based on the current Vite manifest — while **preserving static files** defined in a manifest. Ideal for keeping your Shopify repo clean and deploy-ready without clutter from old build artifacts.
+A Vite plugin that **cleans up stale assets** from your Shopify theme's `assets/` folder based on the current Vite manifest — while **preserving static files** defined in a static-assets manifest. Ideal for keeping your Shopify repo clean and deploy-ready without clutter from old build artifacts. This was build with the [Shopify Paper theme](https://themes.shopify.com/themes/paper/styles/poster) in mind, but should work with any Shopify theme that uses Vite.
 
 ---
 
@@ -59,7 +59,7 @@ Place this file in the **root of your project**. It should list all the static a
 ["logo.svg", "mezereon.js", "mezereon.css.liquid", "manifest.json"]
 ```
 
-> These filenames should match what's in the `assets/` folder exactly.
+> These filenames should match what's in the `assets/` folder exactly. The manifest.json file need to be included in the static-assets.json file to prevent it from being deleted.
 
 ---
 
@@ -106,7 +106,7 @@ No files are removed during dry run.
 │   └── manifest.json       ← current Vite manifest
 ├── src/
 │   └── ...
-├── static-assets.json
+├── static-assets.json   ← list of static assets to preserve
 ├── vite.config.ts
 ```
 
