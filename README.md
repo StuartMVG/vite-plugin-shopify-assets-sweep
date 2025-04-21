@@ -56,10 +56,10 @@ export default {
 Place this file in the **root of your project**. It should list all the static assets you want to **preserve**, even if they aren’t in the current Vite manifest:
 
 ```json
-["logo.svg", "mezereon.js", "mezereon.css.liquid", "manifest.json"]
+["logo.svg", "mezereon.js", "mezereon.css.liquid"]
 ```
 
-> These filenames should match what's in the `assets/` folder exactly. The manifest.json file need to be included in the static-assets.json file to prevent it from being deleted.
+> These filenames should match what's in the `assets/` folder exactly.
 
 ---
 

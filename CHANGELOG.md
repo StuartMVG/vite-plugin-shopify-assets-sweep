@@ -16,3 +16,10 @@ All notable changes to **vite-plugin-shopify-assets-sweep** will be documented i
 - Fully configurable via plugin options
 
 ---
+
+## [1.0.3] – 2025-04-21
+
+### Added
+
+- Added the `manifest.json` file to the `static-assets.json` whitelist
+- Added a `README.md` file with usage instructions
