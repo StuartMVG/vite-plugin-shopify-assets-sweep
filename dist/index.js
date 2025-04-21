@@ -21,13 +21,16 @@ export default function shopifyAssetsSweep(options = {}) {
                     console.warn(`WARNING: ${resolvedOptions.staticManifestFileName} must be an array. Ignoring.`);
                     return [];
                 }
+                if (!staticFiles.includes("manifest.json")) {
+                    staticFiles.push("manifest.json");
+                }
                 return staticFiles.map((f) => f.trim());
             }
             catch (e) {
                 console.warn(`WARNING: Failed to parse ${resolvedOptions.staticManifestFileName}: ${e.message}`);
             }
         }
-        return [];
+        return ["manifest.json"];
     }
     function getFilesInManifest(manifest) {
         const files = new Set();

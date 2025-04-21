@@ -39,6 +39,9 @@ export default function shopifyAssetsSweep(
           );
           return [];
         }
+        if (!staticFiles.includes("manifest.json")) {
+          staticFiles.push("manifest.json");
+        }
         return staticFiles.map((f) => f.trim());
       } catch (e) {
         console.warn(
@@ -48,7 +51,7 @@ export default function shopifyAssetsSweep(
         );
       }
     }
-    return [];
+    return ["manifest.json"];
   }
 
   function getFilesInManifest(manifest: Record<string, any>): string[] {
